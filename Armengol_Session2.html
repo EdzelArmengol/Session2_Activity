@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 2</title>
+  </head>
+  <body>
+    <h1>Session 2</h1>
+    <p>
+      Bleach is a Japanese anime television series based on Tite Kubo's original manga series of the same name. It was produced by Studio Pierrot and directed by Noriyuki Abe. The series aired on TV Tokyo from October 2004 to March 2012, spanning 366 episodes. The story follows the adventures of Ichigo Kurosaki after he obtains the powers of a Soul Reaper—a death personification similar to the Grim Reaper—from another Soul Reaper, Rukia Kuchiki. His newfound powers force him to take on the duties of defending humans from evil spirits and guiding departed souls to the afterlife. In addition to adapting the manga series it is based on, the anime periodically includes original self-contained storylines and characters not found in the source material. <abbr title="Supernatural Action MartialArts">"SAM"</abbr>, captures the essence of Bleach, which often features supernatural elements, intense action sequences, and martial arts combat as central themes in its storytelling.
+    </p>
+    <section>
+      <h2>Main Bleach characters</h2>
+      <table>
+        <caption>
+          <h3>Characters</h3>
+        </caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Race</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ichigo Kurosaki</td>
+            <td rowspan="1">Human, Hollow, Quincy, and Shinigami</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>Rukia Kuchiki</td>
+            <td rowspan="1">Shinigami</td>
+            <td>150</td>
+          </tr>
+          <tr>
+            <td colspan="1">Orihime Inoue</td>
+            <td rowspan="1">Human</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td colspan="1">Uryu Ishida</td>
+            <td rowspan="1">Quincy</td>
+            <td>17</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Side Bleach characters</h2>
+      <p>Bleach includes a rich diversity of characters, from Humans and Quincy to Arrancar and Shinigami. That said, numerous side characters are downright forgettable, largely because they don't hang around in the story for very long. On the other hand, there is a handful whose vibrant personalities are simply impossible to ignore.</p>
+      <!-- 1st new attribute. compact to the <ol> element -->
+      <ol type="i" start="5" reversed value="10" compact>
+        <li>Yachiru Kusajishi</li>
+        <li>Ichimaru Gin</li>
+        <li>Retsu Unohana</li>
+        <li>Yumichika Ayasegawa</li>
+        <li>Masaki Kurosaki</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Ichigo Kurosaki (Main Character)</h2>
+      <figure>
+        <!-- 1st attribute. src attribute in the <img> -->
+        <!-- 2nd attribute. alt attribute in the <img> -->
+        <img
+          src="https://imgix.ranker.com/list_img_v2/1360/2681360/original/the-best-ichigo-quotes?auto=format&q=50&fit=crop&fm=pjpg&dpr=2&crop=faces&h=418.848167539267&w=800"
+          alt="IchigoKurosaki"
+          srcset="image2x.jpg 2x, image3x.jpg 3x"
+          sizes="(max-width: 600px) 100vw, 50vw"
+        />
+        <figcaption>Ichigo Kurosaki
+            <!-- 3rd attribute. href attribute in the <a></a> -->
+            <!-- 4th attribute. target attribute in the <a></a>> -->
+            <!-- 10th new attribute. rel, download, and noopener noreferrer to the <a> element -->
+          <a href="https://www.google.com/search?q=Bleach" target="_blank" rel="noopener noreferrer" download>Bleach</a>
+        </figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Sign in to my website in order to receive future news about Bleach!</h2>
+      <!-- 5th attribute. for attribute in the <label></label> -->
+      <!-- 6th new attribute. method to the <form> element -->
+      <!-- 7th new attribute. enctype to the <form> element -->
+      <!-- 8th new attribute. autocomplete to the <form> element -->
+      <form action="index2.html" method="POST" enctype="multipart/form-data" autocomplete="on">
+        <label for="name">Name</label>
+        <!-- 2nd new attribute. tabindex to the <input> element -->
+        <!-- 9th new attribute. readonly to the <input> element -->
+        <input type="text" placeholder="Tim" id="name" required pattern="[A-Za-z]+" readonly tabindex="1" />
+        <br />
+        <label for="age">Age</label>
+        <!-- 3rd new attribute. step to the <input> element -->
+        <input type="number" placeholder="Age" id="age" min="18" max="75" step="1" />
+        <br />
+        <label for="email">Email Address</label>
+        <!-- 4th new attribute. multiple to the <input> element -->
+        <input type="email" placeholder="Enter your Email address" id="email" multiple />
+        <br />
+        <label for="pw">Password</label>
+        <!-- 5th new attribute. minlength and maxlength to the <input> element -->
+        <input type="password" placeholder = "Enter your password" id="pw" minlength="6" maxlength="20" />
+        <fieldset>
+          <legend>What is your knowledge level of Bleach?</legend>
+          <input type="radio" name="dev-type" id="front-end" />
+          <label for="front-end">Begginer</label>
+          <br />
+          <input type="radio" name="dev-type" id="back-end" />
+          <label for="back-end">Intermediate</label>
+          <br />
+          <input type="radio" name="dev-type" id="full-stack" />
+          <label for="full-stack">Expert</label>
+        </fieldset>
+        <textarea cols="30" rows="10" placeholder="Comment down your thoughts!" name="comments" spellcheck="true" wrap="soft"></textarea>
+        <br />
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Non-binary</option>
+        </select>
+        <button type="submit" disabled form="myForm" accesskey="S">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
